@@ -1,1 +1,1 @@
-# CUHK-FINA4380-Algorithmic-Trading-Strategies
+# CUHK - FINA4380 - Algorithmic Trading Strategies
