@@ -13,14 +13,15 @@ Greatly motivated by the above ideas, I hope to create a Regime Switching Strate
 -	The central idea is to see if quantitative/algorithmic rules designed using Statistical techniques can be applied to identify 1) the correct hedging timing and 2) the correct hedging ratio to prevent the large drawdowns and outperform a simple long-and-hold strategy
 -	Most important, the hedge timing and hedge ratio should not be predefined and are determined by data
 
+
 ### Table of Content
 This section outlines the structure of the file ‘Regime Switching Statistical Hedge Final.ipynb’.
 1.	Read Data, Clean Data and Descriptive Plots
 2.	Determining Hedge Ratio using Kalman Filter
 3.	Determining Hedge Timing
-    a.	Determining Hedge Timing using Daily Equity Turbulence Index and Hidden Markov Model
-    b.	Determining Hedge Timing using change point analysis
-    c.	Discussion and Comparison on HMM Strategy and Change Point Strategy
+    - Determining Hedge Timing using Daily Equity Turbulence Index and Hidden Markov Model
+    - Determining Hedge Timing using change point analysis
+    - Discussion and Comparison on HMM Strategy and Change Point Strategy
 4.	Execution and NAV Calculation on Change Point Strategy
 5.	Performance Measure for Change Point Strategy
 
