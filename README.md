@@ -49,4 +49,10 @@ This section outlines the specific methods used for determining the Hedge Ratio 
     - The two-regime Markov-Switching model will first be calibrated using in-sample turbulence index and the Baum Welch Algorithm
     - The model will then be used to infer the probabilities for high volatility regime and low volatility regime for the out-of-sample period using the Forward Algorithm.
     - Probability (high volatility regime) > Probability (low volatility regime) will indicate a classification of ‘high volatility regime’
+   <br/>
+   <br/>
+   Change Point Analysis:
+   - Idea is motivated by Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016) and Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R
+   - Given a sequence X_1,\ X_2,\ ....,\ X_n,\ \ the Change Point Analysis works by evaluating a two-sample test statistic at every possible split point. Let D_{k,\ n} be the value of the test statistic when the sequence is split into the two samples 
+   - 
 
