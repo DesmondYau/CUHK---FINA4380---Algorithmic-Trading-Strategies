@@ -20,10 +20,10 @@ Greatly motivated by the above ideas, I hope to create a Regime Switching Strate
 ### Table of Content
 This section outlines the structure of the file ‘Regime Switching Statistical Hedge Final.ipynb’.
 1.	Read Data, Clean Data and Descriptive Plots
-2.	Determining Hedge Ratio using Kalman Filter
+2.	Determining Hedge Ratio using __Kalman Filter__
 3.	Determining Hedge Timing
-    - Determining Hedge Timing using Daily Equity Turbulence Index and Hidden Markov Model
-    - Determining Hedge Timing using change point analysis
+    - Determining Hedge Timing using Daily Equity Turbulence Index and __Hidden Markov Model__
+    - Determining Hedge Timing using __change point analysis__
     - Discussion and Comparison on HMM Strategy and Change Point Strategy
 4.	Execution and NAV Calculation on Change Point Strategy
 5.	Performance Measure for Change Point Strategy
