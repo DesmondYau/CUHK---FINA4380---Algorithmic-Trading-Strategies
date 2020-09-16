@@ -102,6 +102,11 @@ This section outlines the specific methods used for determining the Hedge Ratio 
 
 <br/>
 
+### Results
+
+| | Change Point Strategy | Benchmark |
+
+
 ### Reference
     - Kritzman, M., Page, S., & Turkington, D. (2012). Regime Shifts: Implications for Dynamic Strategies (corrected). Financial Analysts Journal, 68(3), 22-39. doi:10.2469/faj.v68.n3.3
     - Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016). Detecting change points in VIX and S&P 500: A new approach to dynamic asset allocation. Journal of Asset Management, 17(5), 361-374. doi:10.1057/jam.2016.12
