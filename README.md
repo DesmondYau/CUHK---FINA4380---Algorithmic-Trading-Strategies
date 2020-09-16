@@ -28,3 +28,11 @@ This section outlines the structure of the file ‘Regime Switching Statistical 
 4.	Execution and NAV Calculation on Change Point Strategy
 5.	Performance Measure for Change Point Strategy
 
+<br/>
+
+### Strategy Construction and Methodology
+This section outlines the specific methods used for determining the Hedge Ratio and Hedge Timing used in the trading strategy.
+1.  Hedge Ratio will be determined using Kalman Filter Method.
+    - Linear State-Space model
+      State Equation
+
