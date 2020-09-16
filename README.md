@@ -58,22 +58,22 @@ This section outlines the specific methods used for determining the Hedge Ratio 
 <br/>
 
 ### Strategy Characteristics
-    - Instruments: S&P 500 E-mini futures and S&P 500 VIX futures
-    - Long-short, relative return strategy
-      - Benchmark Portfolio: Long and hold S&P 500 E-mini futures
-    - Out-of-sample trading period: Jan 2017 – June 2020 
-      - Market in this period is volatile enough to test the strategy
-    - Aims at 0% cash holding
-    - VIX futures is used for hedging 
+   - Instruments: S&P 500 E-mini futures and S&P 500 VIX futures
+   - Long-short, relative return strategy
+     - Benchmark Portfolio: Long and hold S&P 500 E-mini futures
+   - Out-of-sample trading period: Jan 2017 – June 2020 
+     - Market in this period is volatile enough to test the strategy
+   - Aims at 0% cash holding
+   - VIX futures is used for hedging 
     
 <br/>
 
 ### Rebalancing and Risk off trigger
-    - Rebalancing is performed when either one of the two following conditions is satisfied: 
-      -	When a change in regime is detected (either from low volatility regime to high volatility regime or from high volatility regime to low volatility regim)
-      -	When the current hedge ratio deviates from the target hedge ratio by a certain threshold
-    -	Since hedging using VIX futures is only a statistical hedge (i.e. the hedge ratio is ‘correct’ on average), we only perform rebalancing when the current hedge ratio deviates from target hedge ratio by more than 5% to reduce transaction cost
-    -	There is no predefined risk off trigger for this strategy since the central idea of the strategy is to detect high volatility regime using the data and perform hedging at the correct timing with the correct hedge ratio to avoid large drawdown
+   - Rebalancing is performed when either one of the two following conditions is satisfied: 
+     - When a change in regime is detected (either from low volatility regime to high volatility regime or from high volatility regime to low volatility regim)
+     - When the current hedge ratio deviates from the target hedge ratio by a certain threshold
+   - Since hedging using VIX futures is only a statistical hedge (i.e. the hedge ratio is ‘correct’ on average), we only perform rebalancing when the current hedge ratio deviates from target hedge ratio by more than 5% to reduce transaction cost
+   - There is no predefined risk off trigger for this strategy since the central idea of the strategy is to detect high volatility regime using the data and perform hedging at the correct timing with the correct hedge ratio to avoid large drawdown
 
 
    
