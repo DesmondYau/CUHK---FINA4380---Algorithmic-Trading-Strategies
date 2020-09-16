@@ -49,6 +49,7 @@ This section outlines the specific methods used for determining the Hedge Ratio 
     - The model will then be used to infer the probabilities for high volatility regime and low volatility regime for the out-of-sample period using the Forward Algorithm.
     - Probability (high volatility regime) > Probability (low volatility regime) will indicate a classification of ‘high volatility regime <br/> <br/>
     
-    Change Point Analysis:
+    Change Point Analysis
     - Idea is motivated by Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016) and Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R
+    - Given a sequence <a href="https://www.codecogs.com/eqnedit.php?latex=X_{1},X_{2},......,&space;X_{n}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?X_{1},X_{2},......,&space;X_{n}" title="X_{1},X_{2},......, X_{n}" /></a>, the Change Point Analysis works by evaluating a two-sample test statistic at every possible split point. Let <a href="https://www.codecogs.com/eqnedit.php?latex=D_{k,n}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?D_{k,n}" title="D_{k,n}" /></a> be the value of the test statistic when the sequence is split into the two samples 
    
