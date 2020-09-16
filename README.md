@@ -53,6 +53,4 @@ This section outlines the specific methods used for determining the Hedge Ratio 
    <br/>
    Change Point Analysis:
    - Idea is motivated by Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016) and Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R
-   - Given a sequence X_1,\ X_2,\ ....,\ X_n,\ \ the Change Point Analysis works by evaluating a two-sample test statistic at every possible split point. Let D_{k,\ n} be the value of the test statistic when the sequence is split into the two samples 
-   - 
-
+   
