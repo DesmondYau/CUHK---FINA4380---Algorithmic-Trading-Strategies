@@ -102,10 +102,6 @@ This section outlines the specific methods used for determining the Hedge Ratio 
 
 <br/>
 
-### Results
-
-| | Change Point Strategy | Benchmark |
-
 
 ### Reference
     - Kritzman, M., Page, S., & Turkington, D. (2012). Regime Shifts: Implications for Dynamic Strategies (corrected). Financial Analysts Journal, 68(3), 22-39. doi:10.2469/faj.v68.n3.3
