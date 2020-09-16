@@ -33,18 +33,18 @@ This section outlines the structure of the file ‘Regime Switching Statistical 
 ### Strategy Construction and Methodology
 This section outlines the specific methods used for determining the Hedge Ratio and Hedge Timing used in the trading strategy.
 1. __Hedge Ratio will be determined using Kalman Filter Method.__
-    - Linear State-Space model <br/> 
+     - Linear State-Space model <br/> 
         <p align="center"> <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}\alpha_{t&plus;1}\\\beta_{t&plus;1}\end{bmatrix}&space;=&space;\begin{bmatrix}1&space;&&space;0\\0&space;&&space;1\end{bmatrix}&space;\begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix}&space;&plus;&space;\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\begin{bmatrix}\alpha_{t&plus;1}\\\beta_{t&plus;1}\end{bmatrix}&space;=&space;\begin{bmatrix}1&space;&&space;0\\0&space;&&space;1\end{bmatrix}&space;\begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix}&space;&plus;&space;\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" title="\begin{bmatrix}\alpha_{t+1}\\\beta_{t+1}\end{bmatrix} = \begin{bmatrix}1 & 0\\0 & 1\end{bmatrix} \begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix} + \begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" /></a> </p>
         <p align="center"> <a href="https://www.codecogs.com/eqnedit.php?latex=SP\_return_{t}&space;=&space;\begin{bmatrix}1&space;&&space;VX\_return_{t}\end{bmatrix}&space;\begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix}&space;&plus;&space;e_{t}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SP\_return_{t}&space;=&space;\begin{bmatrix}1&space;&&space;VX\_return_{t}\end{bmatrix}&space;\begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix}&space;&plus;&space;e_{t}" title="SP\_return_{t} = \begin{bmatrix}1 & VX\_return_{t}\end{bmatrix} \begin{bmatrix}\alpha_{t}\\\beta_{t}\end{bmatrix} + e_{t}" /></a> </p> <br/>
-    - The initial state covariance, transition covariance of <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" title="\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" /></a>  and observation covariance of  <a href="https://www.codecogs.com/eqnedit.php?latex=e_{t}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?e_{t}" title="e_{t}" /></a>  will be estimated using Expectation Maximization (EM) 
+     - The initial state covariance, transition covariance of <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" title="\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" /></a>  and observation covariance of  <a href="https://www.codecogs.com/eqnedit.php?latex=e_{t}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?e_{t}" title="e_{t}" /></a>  will be estimated using Expectation Maximization (EM) 
 <br/>
     
 2. __Hedge Timing will be determined using two methods, namely Hidden Markov Model (HMM) and Change Point Analysis__. Performance of both methods will be compared and discussed in section 3C of ‘Regime Switching Statistical Hedge Final.ipynb’. 
-    - Hidden Markov Model 
-      - Idea is motivated by Kritzman, M., Page, S., & Turkington, D. (2012)
-      - Assume a two-regime Markov-Switching model, i.e. we are either in low volatility or high volatility regime
-      - An equity turbulence index will be created using returns of 11 S&P 500 sector indices using multivariate distance measure/squared Mahalanobis distance which will be used to determine the regime at any given time point 
-      - The two-regime Markov-Switching model will first be calibrated using in-sample turbulence index and the Baum Welch Algorithm
-      - The model will then be used to infer the probabilities for high volatility regime and low volatility regime for the out-of-sample period using the Forward Algorithm.
-      - Probability (high volatility regime) > Probability (low volatility regime) will indicate a classification of ‘high volatility regime’
+     - Hidden Markov Model 
+       - Idea is motivated by Kritzman, M., Page, S., & Turkington, D. (2012)
+       - Assume a two-regime Markov-Switching model, i.e. we are either in low volatility or high volatility regime
+       - An equity turbulence index will be created using returns of 11 S&P 500 sector indices using multivariate distance measure/squared Mahalanobis distance which will be used to determine the regime at any given time point 
+       - The two-regime Markov-Switching model will first be calibrated using in-sample turbulence index and the Baum Welch Algorithm
+       - The model will then be used to infer the probabilities for high volatility regime and low volatility regime for the out-of-sample period using the Forward Algorithm.
+       - Probability (high volatility regime) > Probability (low volatility regime) will indicate a classification of ‘high volatility regime’
 
