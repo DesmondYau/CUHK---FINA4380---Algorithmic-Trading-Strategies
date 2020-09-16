@@ -58,12 +58,12 @@ This section outlines the specific methods used for determining the Hedge Ratio 
 <br/>
 
 ### Strategy Characteristics
-    - Instruments: S&P 500 E-mini futures and S&P 500 VIX futures
-	- Long-short, relative return strategy
-	  - Benchmark Portfolio: Long and hold S&P 500 E-mini futures
-    - Out-of-sample trading period: Jan 2017 – June 2020 
-      - Market in this period is volatile enough to test the strategy
-    - Aims at 0% cash holding
-    - VIX futures is used for hedging 
+   - Instruments: S&P 500 E-mini futures and S&P 500 VIX futures
+   - Long-short, relative return strategy
+     - Benchmark Portfolio: Long and hold S&P 500 E-mini futures
+   - Out-of-sample trading period: Jan 2017 – June 2020 
+     - Market in this period is volatile enough to test the strategy
+   - Aims at 0% cash holding
+   - VIX futures is used for hedging 
 
    
