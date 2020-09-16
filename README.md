@@ -34,7 +34,7 @@ This section outlines the structure of the file ‘Regime Switching Statistical 
 This section outlines the specific methods used for determining the Hedge Ratio and Hedge Timing used in the trading strategy.
 1.  __Hedge Ratio will be determined using Kalman Filter Method__
     - Linear State-Space model <br/> <br/>
-      State Equation: <img src="https://render.githubusercontent.com/render/math?math=\begin{bmatrix}\alpha_{t+1}\\\beta_{t+1}\end{bmatrix}">
+      State Equation: <<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bbmatrix%7D%5Calpha_%7Bt%2B1%7D%5C%5C%5Cbeta_%7Bt%2B1%7D%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\begin{bmatrix}\alpha_{t+1}\\\beta_{t+1}\end{bmatrix}" width="61" height="42" />
 
 
 
