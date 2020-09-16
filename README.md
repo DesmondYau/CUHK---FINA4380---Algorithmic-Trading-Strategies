@@ -39,7 +39,7 @@ This section outlines the specific methods used for determining the Hedge Ratio 
     - The initial state covariance, transition covariance of <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" title="\begin{bmatrix}\eta_{t}\\\epsilon_{t}\end{bmatrix}" /></a>  and observation covariance of  <a href="https://www.codecogs.com/eqnedit.php?latex=e_{t}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?e_{t}" title="e_{t}" /></a>  will be estimated using Expectation Maximization (EM) 
 <br/>
     
-2. __Hedge Timing will be determined using two methods, namely Hidden Markov Model (HMM) and Change Point Analysis__. Performance of both methods will be compared and discussed in section 3C of ‘Regime Switching Statistical Hedge Final.ipynb’. 
+2. __Hedge Timing will be determined using two methods, namely Hidden Markov Model (HMM) and Change Point Analysis__. Performance of both methods will be compared and discussed in section 3C of ‘Regime Switching Statistical Hedge Final.ipynb’. <br/>
     Hidden Markov Model 
     - Idea is motivated by Kritzman, M., Page, S., & Turkington, D. (2012)
     - Assume a two-regime Markov-Switching model, i.e. we are either in low volatility or high volatility regime
