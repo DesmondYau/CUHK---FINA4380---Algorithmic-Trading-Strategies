@@ -75,5 +75,18 @@ This section outlines the specific methods used for determining the Hedge Ratio 
    - Since hedging using VIX futures is only a statistical hedge (i.e. the hedge ratio is ‘correct’ on average), we only perform rebalancing when the current hedge ratio deviates from target hedge ratio by more than 5% to reduce transaction cost
    - There is no predefined risk off trigger for this strategy since the central idea of the strategy is to detect high volatility regime using the data and perform hedging at the correct timing with the correct hedge ratio to avoid large drawdown
 
+<br/>
 
-   
+### Transaction cost assumption
+   1. Transaction cost assumption for ES-mini:
+      - Commission: USD 0.85 per contract
+        o   https://www.interactivebrokers.com/en/index.php?f=1590&p=futures1
+      -	Exchange fee: USD 1.23 per contract 
+        o	https://www.tradestation.com/pricing/exchange-execution-and-clearing-fees/
+      -	NFA Regulatory Fee: USD 0.02 per contract 
+        o	https://www.tradestation.com/pricing/exchange-execution-and-clearing-fees/
+      -	Bid-Ask Spread: USD 12.5 per contract (0.25 per tick * 50)
+      -	Market Impact: Assume 0.125 bps 
+        o	https://www.cmegroup.com/trading/equity-index/report-a-cost-comparison-of-futures-and-etfs.html
+        o	According to research from CME, the market impact of the hypothetical USD 100 million order is estimated to be 1.25bps for E-mini futures. Since we have USD 10 million capital, assume 0.125 bps for simplicity
+
