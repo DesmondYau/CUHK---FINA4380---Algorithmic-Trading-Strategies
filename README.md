@@ -41,7 +41,7 @@ This section outlines the specific methods used for determining the Hedge Ratio 
     
 2. __Hedge Timing will be determined using two methods, namely Hidden Markov Model (HMM) and Change Point Analysis__. Performance of both methods will be compared and discussed in section 3C of ‘Regime Switching Statistical Hedge Final.ipynb’. <br/> <br/>
     
-Hidden Markov Model 
+    Hidden Markov Model 
     - Idea is motivated by Kritzman, M., Page, S., & Turkington, D. (2012)
     - Assume a two-regime Markov-Switching model, i.e. we are either in low volatility or high volatility regime
     - An equity turbulence index will be created using returns of 11 S&P 500 sector indices using multivariate distance measure/squared Mahalanobis distance which will be used to determine the regime at any given time point 
@@ -49,6 +49,6 @@ Hidden Markov Model
     - The model will then be used to infer the probabilities for high volatility regime and low volatility regime for the out-of-sample period using the Forward Algorithm.
     - Probability (high volatility regime) > Probability (low volatility regime) will indicate a classification of ‘high volatility regime <br/> <br/>
     
-Change Point Analysis:
+    Change Point Analysis:
     - Idea is motivated by Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016) and Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R
    
