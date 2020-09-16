@@ -10,8 +10,8 @@ The idea of the strategy originates from the various regime switching asset allo
 Other regime detection methods are also proposed. For example, Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016) proposed an approach for dynamic asset allocation based on change points detected in CBOE VIX or daily returns of S&P 500 index using a non-parametric approach.
 
 Greatly motivated by the above ideas, I hope to create a Regime Switching Strategy to achieve the following:
--	During low volatility regime, long S&P 500 E-mini futures 
--	During high volatility regime, hedge long position in S&P 500 futures with VIX futures using the appropriate hedge ratio
+-	__During low volatility regime, long S&P 500 E-mini futures__
+-	__During high volatility regime, hedge long position in S&P 500 futures with VIX futures using the appropriate hedge ratio__
 -	The central idea is to see if quantitative/algorithmic rules designed using Statistical techniques can be applied to identify 1) the correct hedging timing and 2) the correct hedging ratio to prevent the large drawdowns and outperform a simple long-and-hold strategy
 -	Most important, the hedge timing and hedge ratio should not be predefined and are determined by data
 
