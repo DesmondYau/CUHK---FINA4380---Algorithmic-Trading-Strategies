@@ -100,4 +100,11 @@ This section outlines the specific methods used for determining the Hedge Ratio 
       -	Bid-Ask Spread: USD 50 per contract (0.05 per tick * 1000) 
       -	Market Impact: Assume 0.125 bps for simplicity with the reason same as above
 
+<br/>
+
+### Reference
+    - Kritzman, M., Page, S., & Turkington, D. (2012). Regime Shifts: Implications for Dynamic Strategies (corrected). Financial Analysts Journal, 68(3), 22-39. doi:10.2469/faj.v68.n3.3
+    - Nystrup, P., Hansen, B. W., Madsen, H., & Lindström, E. (2016). Detecting change points in VIX and S&P 500: A new approach to dynamic asset allocation. Journal of Asset Management, 17(5), 361-374. doi:10.1057/jam.2016.12
+    - Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R: The cpm Package. Journal of Statistical Software, 66(3), 1-20. URL http://www.jstatsoft.org/v66/i03/
+
 
